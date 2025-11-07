@@ -10,7 +10,7 @@ This lab guides you through developing an agent-driven, Retrieval-Augmented Gene
 
 ## What You'll Build
 
-- A Semantic Kernel Agent that can reason over legal cases stored in PostgreSQL
+- A Microsoft Agent Framework Agent that can reason over legal cases stored in PostgreSQL
 - A system that utilizes vector embeddings for semantic search
 - Plugins for database search and external data retrieval 
 - An application enhanced with the GraphRAG pattern for improved answer quality
@@ -18,7 +18,7 @@ This lab guides you through developing an agent-driven, Retrieval-Augmented Gene
 ## Key Technologies
 
 - **Azure Database for PostgreSQL**: Database platform with AI extensions
-- **Semantic Kernel**: Framework for building AI agents with plugins
+- **Microsoft Agent Framework**: Framework for building AI agents with plugins
 - **Azure OpenAI**: For embeddings and LLM chat completions
 - **PostgreSQL Extensions**: Vector and Graph capabilities (DiskANN, AGE)
 - **Python**: For agent development and database interaction
@@ -52,7 +52,7 @@ This lab guides you through developing an agent-driven, Retrieval-Augmented Gene
 - Python environment with necessary libraries:
   - PostgreSQL connectivity (`psycopg`, `psycopg-binary`, `psycopg-pool`)
   - Modeling and validation (`pydantic`)
-  - OpenAI and Semantic Kernel integration (`openai`, `semantic-kernel`)
+  - OpenAI and Microsoft Agent Framework integration (`openai`, `semantic-kernel`)
   - Notebook compatibility (`nest_asyncio`, `ipykernel`)
 
 ## Lab Sections
@@ -68,7 +68,7 @@ This lab guides you through developing an agent-driven, Retrieval-Augmented Gene
    - DiskANN indexing for fast vector similarity search
 
 3. **Building the Agent Application**:
-   - Setting up Semantic Kernel
+   - Setting up Microsoft Agent Framework
    - Creating database search plugins
    - Implementing semantic reranking
    - Adding external data sources (weather API)
