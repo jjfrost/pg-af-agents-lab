@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Define the .env file path - now at project root
-ENV_FILE_PATH="./.env"
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ENV_FILE_PATH="$SCRIPT_DIR/../.env"
 
 # Clear the contents of the .env file or create it if it doesn't exist
 > $ENV_FILE_PATH
@@ -10,6 +11,8 @@ ENV_FILE_PATH="./.env"
 echo "# Azure OpenAI Configuration" >> $ENV_FILE_PATH
 echo "AZURE_OPENAI_ENDPOINT=$(azd env get-value AZURE_OPENAI_ENDPOINT)" >> $ENV_FILE_PATH
 echo "AZURE_OPENAI_DEPLOYMENT=$(azd env get-value AZURE_OPENAI_CHAT_DEPLOYMENT)" >> $ENV_FILE_PATH
+echo "AZURE_EMBED_DEPLOYMENT=$(azd env get-value AZURE_OPENAI_EMB_DEPLOYMENT)" >> $ENV_FILE_PATH
+echo "AZURE_API_VERSION=2024-11-20" >> $ENV_FILE_PATH
 echo "" >> $ENV_FILE_PATH
 
 # Database Configuration - using output names from main.bicep
