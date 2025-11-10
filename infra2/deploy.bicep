@@ -107,7 +107,7 @@ resource azureOpenAIEmbeddingDeployment 'Microsoft.CognitiveServices/accounts/de
   name: 'text-embedding-3-small'
   parent: azureOpenAIService
   sku: {
-    name: 'Standard'
+    name: 'GlobalStandard'
     capacity: 350
   }
   properties: {
@@ -128,7 +128,7 @@ resource azureOpenAIChatDeployment 'Microsoft.CognitiveServices/accounts/deploym
     azureOpenAIEmbeddingDeployment
   ]
   sku: {
-    name: 'Standard'
+    name: 'GlobalStandard'
     capacity: 200
   }
   properties: {
