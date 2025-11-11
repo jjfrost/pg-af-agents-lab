@@ -108,7 +108,7 @@ resource azureOpenAIEmbeddingDeployment 'Microsoft.CognitiveServices/accounts/de
   parent: azureOpenAIService
   sku: {
     name: 'GlobalStandard'
-    capacity: 350
+    capacity: 1000
   }
   properties: {
     model: {
@@ -129,7 +129,7 @@ resource azureOpenAIChatDeployment 'Microsoft.CognitiveServices/accounts/deploym
   ]
   sku: {
     name: 'GlobalStandard'
-    capacity: 200
+    capacity: 1000
   }
   properties: {
     model: {
