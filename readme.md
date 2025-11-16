@@ -123,8 +123,6 @@ Follow these steps to deploy a PostgreSQL Flexible Server to Azure with the pgve
 - [Graph data in Azure Database for PostgreSQL](https://aka.ms/age-blog)
 - [PostgreSQL extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-postgresql)
 - [Microsoft Agent Framework Documentation](https://microsoft.github.io/agent-framework/)
-- [Semantic Ranker Solution Accelerator](https://aka.ms/semantic-ranker-solution-accelerator-pg-blog)
-- [Build your own advanced AI Copilot with Postgres](http://aka.ms/pg-byoac-docs)
 
 ## License
 
